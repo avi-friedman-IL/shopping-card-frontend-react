@@ -1,0 +1,20 @@
+// COLORS
+$color-primary: #565656;
+
+$bg-color-input: #c4d8d373;
+$bg-color-input-focus: #8b8b8b73;
+$bg-color-btn: #a1c8c9;
+$bg-color-btn-hover: #7fa2c6;
+$color-btn: #565656;
+
+// LAYOUT
+$layout-padding: 20px;
+
+// LAYOUT BREAKPOINTS
+$break-sm: 1200px;
+$break-md: 1360px;
+$break-lg: 1920px;
+
+$padded-break-sm: $break-sm;
+$padded-break-md: $break-md + $layout-padding * 2;
+$padded-break-lg: $break-lg + $layout-padding * 2;

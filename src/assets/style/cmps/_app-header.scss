@@ -1,0 +1,45 @@
+.app-header {
+    position: relative;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+
+    padding: 1rem;
+
+    box-shadow: rgba(0, 30, 43, 0.1) 0px 1px 4px 0px;
+
+    .app-nav {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 1rem;
+
+        a {
+            color: unset;
+            text-decoration: none;
+
+            &.active {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .login {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+
+        padding-inline: 1rem;
+        border: none;
+        font-size: 1rem;
+        background-color: #f0f0f0;
+        cursor: pointer;
+
+        transition: .2s;
+
+        &:hover {
+            color: white;
+            background-color: #e0e0e0;
+        }
+    }
+}

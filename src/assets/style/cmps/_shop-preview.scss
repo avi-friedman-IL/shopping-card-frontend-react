@@ -1,0 +1,54 @@
+.shop-preview {
+    display: grid;
+    grid-auto-flow: column;
+
+    padding-block-start: 15rem;
+    font-size: .75rem;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    box-shadow: 1px 2px 20px 0px rgba(0, 0, 0, 0.2);
+
+    .info {
+        display: grid;
+        width: 100%;
+        padding: .5rem;
+        background-color: white;
+
+        h2 {
+            font-weight: bold;
+        }
+
+        &>* {
+            font-size: .75rem;
+        }
+    }
+
+    .btns {
+        display: grid;
+        justify-items: end;
+        width: 100%;
+        height: 100%;
+        padding: .5rem;
+        background-color: white;
+
+        svg {
+            width: 1.5rem;
+            height: 1.5rem;
+            color: rgb(14 116 233 / 70%);
+
+            &:hover {
+                color: rgb(14 116 233 / 100%);
+            }
+        }
+
+        &>button,
+        a {
+            width: max-content;
+            font-size: .75rem;
+
+        }
+    }
+}

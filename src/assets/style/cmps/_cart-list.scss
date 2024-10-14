@@ -1,0 +1,13 @@
+.cart-list {
+    display: grid;
+    gap: 1rem;
+
+    &> a {
+        display: grid;
+        width: max-content;
+        padding: .5rem;
+        &:hover{
+            background-color: #f0f0f0;
+        }
+    }
+}

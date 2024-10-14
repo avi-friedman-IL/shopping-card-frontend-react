@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "name": "Wireless Headphones",
+      "image_url": "https://images.unsplash.com/photo-1519677100203-a0e668c92439",
+      "price": 59.99
+    },
+    {
+      "id": 2,
+      "name": "Smartphone",
+      "image_url": "https://images.unsplash.com/photo-1512499617640-c2f999a60713",
+      "price": 499.99
+    },
+    {
+      "id": 3,
+      "name": "4K TV",
+      "image_url": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2",
+      "price": 799.99
+    }
+]
+   

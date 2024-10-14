@@ -1,0 +1,61 @@
+.shop-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    grid-column: 1/-1;
+    grid-row: 1;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 1rem;
+    background-color: white;
+    box-shadow: inset rgba(0, 30, 43, 0.1) 0px 4px 4px 0px;
+
+    a {
+        position: relative;
+
+        span {
+            position: absolute;
+            top: -.7rem;
+            right: -.7rem;
+
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            font-size: .70rem;
+            font-weight: bold;
+
+            background-color: rgb(209 14 14);
+            color: white;
+        }
+        
+        svg {
+            width: 1.5rem;
+            height: 1.5rem;
+            
+            color: rgb(14 116 233 / 70%);
+
+            &:hover {
+                color: rgb(14 116 233 / 100%);
+            }
+        }
+
+    }
+
+    .user-icon {
+        display: grid;
+        justify-items: center;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        background-color: #793e3ecf;
+        color: white;
+    }
+}
