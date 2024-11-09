@@ -9,7 +9,6 @@ const CLOUD_KEY = '929267318661154'
 const CLOUD_SECRET = 'F488b_zzRLS3Sh2Efrfr-8_oHLI'
 
 async function query(filterBy = {}) {
-   console.log('filterBy:', filterBy)
    return httpService.get(`shop`, filterBy)
 }
 

@@ -9,7 +9,8 @@ export function ShopPreview({ product, onRemoveShop, addToCart }) {
    return (
       <li
          className='shop-preview'
-         style={{ backgroundImage: `url(${product.image_url})` }}>
+         style={{ backgroundImage: `url(${product.image_url})` }}
+         >
          <Link to={`/shop/${product._id}`}>
             <div className='info'>
                <h2>{product.name}</h2>

@@ -1,0 +1,12 @@
+.review-index {
+    textarea {
+        width: 50%;
+        padding: .5rem;
+        margin-block-start: 1rem;
+        border: 1px solid #0b57d0;
+        border-radius: .5rem;
+        &::placeholder{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    }
+}

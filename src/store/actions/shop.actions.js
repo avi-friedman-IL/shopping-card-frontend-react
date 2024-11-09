@@ -23,6 +23,16 @@ export async function loadShops(filterBy = {}) {
    }
 }
 
+export async function loadShopById(shopId) {
+   try {
+      const product = await shopService.getById(shopId)
+      return product
+   } catch (err) {
+      console.log('Cannot load product', err)
+      throw err
+   }
+}
+
 export async function removeShop(shopId) {
    try {
       await shopService.remove(shopId)
@@ -57,6 +67,7 @@ export async function updateShop(product) {
 export function setFilter(filterBy) {
    store.dispatch({ type: SET_FILTER, filterBy })
 }
+
 
 // Command Creators:
 function getCmdSetShop(products) {

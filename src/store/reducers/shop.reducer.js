@@ -42,6 +42,7 @@ export function shopReducer(state = initialState, action) {
       case SET_LOADING:
          newState = { ...state, isLoading: action.isLoading }
          break
+
       default:
          state
    }

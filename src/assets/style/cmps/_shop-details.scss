@@ -1,6 +1,49 @@
 .shop-details {
     display: grid;
 
-    margin: 50px auto;
     padding: 1rem;
+
+    .back-btn {
+        display: grid;
+        margin: 1rem 0;
+        width: max-content;
+        padding: .5rem;
+
+        &:hover {
+            background-color: #f0f0f0;
+        }
+    }
+
+    .add-review-btn {
+        margin-block-start: 1rem;
+        width: max-content;
+        padding: .75rem;
+        border: none;
+        border-radius: .5rem;
+        background-color: #0b57d0;
+        color: white;
+
+        &:hover {
+            background-color: #0b57d0;
+            opacity: .8;
+        }
+    }
+
+    .reviews {
+        margin-block-start: 1rem;
+        display: grid;
+        height: 50vh;
+        overflow-y: auto;
+
+        li {
+            display: grid;
+
+            padding: .5rem;
+            box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+            .txt {
+                font-weight: bold;
+            }
+        }
+    }
 }

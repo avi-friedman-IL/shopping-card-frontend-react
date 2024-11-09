@@ -14,11 +14,11 @@ export function ShopIndex() {
    const user = useSelector(state => state.userModule.user)
    const products = useSelector(state => state.shopModule.products)
    const filterBy = useSelector(state => state.shopModule.filterBy)
-   console.log('filterBy:', filterBy)
+   const reviews = useSelector(state => state.reviewModule.reviews)
 
    useEffect(() => {
       load()
-   }, [products?.length, filterBy])
+   }, [products?.length, filterBy, reviews.length])
 
    async function load() {
       await loadShops(filterBy)
@@ -57,7 +57,11 @@ export function ShopIndex() {
             onRemoveShop={onRemoveShop}
             addToCart={addToCart}
          />
-         <ShopList products={products} onRemoveShop={onRemoveShop} addToCart={addToCart} />
+         {/* <ShopList
+            products={products}
+            onRemoveShop={onRemoveShop}
+            addToCart={addToCart}
+         /> */}
          <ShopFilter />
          <Outlet />
       </section>
